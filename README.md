@@ -23,25 +23,27 @@ This project uses **Google Gemini 2.0** to identify objects in images and plot b
    git clone https://github.com/yourusername/gemini-spatial-reference.git
 
 Navigate to the project directory:
-## Running the App
 
 1. **Navigate to the project directory**:
    ```bash
    cd gemini-spatial-reference
 Run the Streamlit app:
-bash
-Copy code
-streamlit run app.py
-css
-Copy code
+
 
 How to Use
+
 Upload Image: Upload an image (JPG/PNG) in the sidebar.
+
 Enter Prompt: Provide a description for object detection (e.g., "Detect all cars").
+
 Click "Run": The app processes the image and overlays bounding boxes with labels.
+
 API Key Setup
+
 Set up a Google Gemini 2.0 API key.
+
 Replace the placeholder in call_llm with your key:
+
 python
 Copy code
 client = Client(api_key="YOUR_API_KEY")
