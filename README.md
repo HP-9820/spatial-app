@@ -38,14 +38,13 @@ Enter Prompt: Provide a description for object detection (e.g., "Detect all cars
 
 Click "Run": The app processes the image and overlays bounding boxes with labels.
 
-API Key Setup
+## API Key Setup
 
-Set up a Google Gemini 2.0 API key.
-
-Replace the placeholder in call_llm with your key:
-
-python
-Copy code
-client = Client(api_key="YOUR_API_KEY")
-arduino
-Copy code
+1. Set up a **Google Gemini 2.0 API key**.
+2. Replace the placeholder in `call_llm` with your key:
+   ```python
+   client = Client(api_key="YOUR_API_KEY")
+Acknowledgements
+1) Streamlit for the interactive app framework.
+2) Google Gemini 2.0 for object detection.
+3) Pillow for image processing.
