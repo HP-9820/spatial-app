@@ -16,12 +16,12 @@ This project uses **Google Gemini 2.0** to identify objects in images and plot b
 - Install dependencies:
   ```bash
   pip install -r requirements.txt
-Running the App:
-Clone the repo:
+## Running the App
 
-bash
-Copy code
-git clone https://github.com/yourusername/gemini-spatial-reference.git
+1. **Clone the repo**:
+   ```bash
+   git clone https://github.com/yourusername/gemini-spatial-reference.git
+
 Navigate to the project directory:
 
 bash
@@ -42,3 +42,5 @@ Replace the placeholder in call_llm with your key:
 python
 Copy code
 client = Client(api_key="YOUR_API_KEY")
+arduino
+Copy code
