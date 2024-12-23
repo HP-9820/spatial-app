@@ -17,7 +17,7 @@ def call_llm(img: Image, prompt: str) -> str:
     Output a JSON list where each entry contains the bounding box in "box_2d" and a text label in "label".
     """
 
-    client = Client(api_key="AIzaSyCw12LqIZUYQzbRoodBzzo0Msj4vjq7x3U")
+    client = Client(api_key="GEMINI API KEY")
     response = client.models.generate_content(
         model="gemini-2.0-flash-exp",
         contents=[prompt, img],
