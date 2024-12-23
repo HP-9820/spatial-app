@@ -1,19 +1,44 @@
-# 🎈 Blank app template
+# Gemini 2.0 Spatial Reference
 
-A simple Streamlit app template for you to modify!
+This project uses **Google Gemini 2.0** to identify objects in images and plot bounding boxes with labels. Built as a **Streamlit** web app, it allows users to upload an image, input a prompt, and visualize bounding boxes with labels overlaid on the image.
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+### Key Features:
+- Object detection with **Gemini 2.0** API
+- Bounding box plotting with labels
+- Interactive **Streamlit** interface
 
-### How to run it on your own machine
+---
 
-1. Install the requirements
+## Installation
 
-   ```
-   $ pip install -r requirements.txt
-   ```
+### Requirements:
+- Python 3.x
+- Install dependencies:
+  ```bash
+  pip install -r requirements.txt
+Running the App:
+Clone the repo:
 
-2. Run the app
+bash
+Copy code
+git clone https://github.com/yourusername/gemini-spatial-reference.git
+Navigate to the project directory:
 
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+bash
+Copy code
+cd gemini-spatial-reference
+Run the Streamlit app:
+
+bash
+Copy code
+streamlit run app.py
+How to Use
+Upload Image: Upload an image (JPG/PNG) in the sidebar.
+Enter Prompt: Provide a description for object detection (e.g., "Detect all cars").
+Click "Run": The app processes the image and overlays bounding boxes with labels.
+API Key Setup
+Set up a Google Gemini 2.0 API key.
+Replace the placeholder in call_llm with your key:
+python
+Copy code
+client = Client(api_key="YOUR_API_KEY")
